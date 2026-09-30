@@ -1,0 +1,135 @@
+// 10 запросов агрегации по варианту 18 (Авиабилеты)
+
+use("airline_db");
+
+print("=== Запрос 1: $match по строковому полю ===");
+printjson(db.flights.aggregate([
+  { $match: { from: "Almaty" } },
+  { $project: { _id: 0, flightId: 1, airline: 1, to: 1, price: 1 } }
+]).toArray());
+
+print("=== Запрос 2: $match по диапазону чисел ===");
+printjson(db.flights.aggregate([
+  { $match: { price: { $gte: 30000, $lte: 100000 } } },
+  { $project: { _id: 0, flightId: 1, from: 1, to: 1, price: 1 } }
+]).toArray());
+
+print("=== Запрос 3: $match по двум условиям + тегу ===");
+printjson(db.flights.aggregate([
+  { $match: { from: "Almaty", tags: "international", rating: { $gt: 4.7 } } },
+  { $project: { _id: 0, flightId: 1, airline: 1, to: 1, price: 1, rating: 1 } }
+]).toArray());
+
+print("=== Запрос 4: $match с $or ===");
+printjson(db.flights.aggregate([
+  { $match: { $or: [ { to: "Moscow" }, { to: "Dubai" } ] } },
+  { $project: { _id: 0, flightId: 1, from: 1, to: 1, price: 1 } }
+]).toArray());
+
+print("=== Запрос 5: $project с вычисляемым полем ===");
+printjson(db.flights.aggregate([
+  {
+    $project: {
+      _id: 0,
+      airline: 1,
+      from: 1,
+      to: 1,
+      price: 1,
+      seatsAvailable: 1,
+      potentialRevenue: { $multiply: ["$price", "$seatsAvailable"] }
+    }
+  }
+]).toArray());
+
+print("=== Запрос 6: $group по городу вылета ===");
+printjson(db.flights.aggregate([
+  {
+    $group: {
+      _id: "$from",
+      flightCount: { $sum: 1 },
+      avgPrice: { $avg: "$price" },
+      minPrice: { $min: "$price" },
+      maxPrice: { $max: "$price" },
+      totalSeats: { $sum: "$seatsAvailable" }
+    }
+  },
+  { $sort: { avgPrice: -1 } }
+]).toArray());
+
+print("=== Запрос 7: $group по авиакомпании с фильтром ===");
+printjson(db.flights.aggregate([
+  { $match: { rating: { $gte: 4.3 } } },
+  {
+    $group: {
+      _id: "$airline",
+      flightsCount: { $sum: 1 },
+      avgRating: { $avg: "$rating" },
+      totalSeats: { $sum: "$seatsAvailable" }
+    }
+  },
+  { $sort: { avgRating: -1 } }
+]).toArray());
+
+print("=== Запрос 8: $sort + $limit (ТОП-5 дорогих) ===");
+printjson(db.flights.aggregate([
+  { $match: { seatsAvailable: { $gt: 0 } } },
+  { $sort: { price: -1 } },
+  { $limit: 5 },
+  { $project: { _id: 0, flightId: 1, airline: 1, to: 1, price: 1, seatsAvailable: 1 } }
+]).toArray());
+
+print("=== Запрос 9: $unwind массива тегов ===");
+printjson(db.flights.aggregate([
+  { $unwind: "$tags" },
+  { $group: { _id: "$tags", count: { $sum: 1 } } },
+  { $sort: { count: -1 } }
+]).toArray());
+
+print("=== Запрос 10: $lookup между коллекциями ===");
+printjson(db.bookings.aggregate([
+  {
+    $lookup: {
+      from: "passengers",
+      localField: "passengerId",
+      foreignField: "passengerId",
+      as: "passenger"
+    }
+  },
+  { $unwind: "$passenger" },
+  {
+    $lookup: {
+      from: "flights",
+      localField: "flightId",
+      foreignField: "flightId",
+      as: "flight"
+    }
+  },
+  { $unwind: "$flight" },
+  {
+    $project: {
+      _id: 0,
+      bookingId: 1,
+      total: 1,
+      status: 1,
+      "passenger.name": 1,
+      "flight.airline": 1,
+      "flight.from": 1,
+      "flight.to": 1
+    }
+  }
+]).toArray());
+
+print("=== Запрос 11: многоэтапный pipeline (4+ этапа) ===");
+printjson(db.flights.aggregate([
+  { $match: { seatsAvailable: { $gt: 0 } } },
+  {
+    $group: {
+      _id: "$from",
+      avgPrice: { $avg: "$price" },
+      totalFlights: { $sum: 1 },
+      maxSeats: { $max: "$seatsAvailable" }
+    }
+  },
+  { $sort: { avgPrice: -1 } },
+  { $limit: 3 }
+]).toArray());

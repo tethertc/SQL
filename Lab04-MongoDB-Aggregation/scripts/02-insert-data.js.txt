@@ -1,0 +1,57 @@
+// Заполнение коллекций тестовыми данными
+
+use("airline_db");
+
+db.flights.insertMany([
+  { flightId: 101, airline: "Air Astana", from: "Almaty", to: "Astana", price: 35000, departure: new Date("2026-10-05T08:00:00"), duration: 90, seatsAvailable: 45, rating: 4.7, tags: ["business", "direct"] },
+  { flightId: 102, airline: "SCAT", from: "Almaty", to: "Astana", price: 28000, departure: new Date("2026-10-05T14:30:00"), duration: 95, seatsAvailable: 20, rating: 4.3, tags: ["economy", "direct"] },
+  { flightId: 103, airline: "Air Astana", from: "Almaty", to: "Moscow", price: 145000, departure: new Date("2026-10-06T22:00:00"), duration: 260, seatsAvailable: 12, rating: 4.8, tags: ["international", "direct"] },
+  { flightId: 104, airline: "FlyArystan", from: "Almaty", to: "Shymkent", price: 19000, departure: new Date("2026-10-05T07:15:00"), duration: 75, seatsAvailable: 60, rating: 4.1, tags: ["economy"] },
+  { flightId: 105, airline: "SCAT", from: "Astana", to: "Almaty", price: 30000, departure: new Date("2026-10-05T18:00:00"), duration: 90, seatsAvailable: 35, rating: 4.4, tags: ["economy", "direct"] },
+  { flightId: 106, airline: "Qazaq Air", from: "Astana", to: "Atyrau", price: 42000, departure: new Date("2026-10-07T10:00:00"), duration: 150, seatsAvailable: 25, rating: 4.5, tags: ["economy"] },
+  { flightId: 107, airline: "Air Astana", from: "Almaty", to: "Istanbul", price: 210000, departure: new Date("2026-10-08T03:30:00"), duration: 320, seatsAvailable: 8, rating: 4.9, tags: ["international", "business"] },
+  { flightId: 108, airline: "FlyArystan", from: "Shymkent", to: "Almaty", price: 17500, departure: new Date("2026-10-05T16:45:00"), duration: 70, seatsAvailable: 70, rating: 4.0, tags: ["economy"] },
+  { flightId: 109, airline: "SCAT", from: "Aktobe", to: "Astana", price: 38000, departure: new Date("2026-10-09T12:00:00"), duration: 130, seatsAvailable: 30, rating: 4.2, tags: ["economy"] },
+  { flightId: 110, airline: "Air Astana", from: "Astana", to: "Dubai", price: 195000, departure: new Date("2026-10-10T23:30:00"), duration: 290, seatsAvailable: 15, rating: 4.8, tags: ["international"] },
+  { flightId: 111, airline: "Qazaq Air", from: "Almaty", to: "Kyzylorda", price: 25000, departure: new Date("2026-10-06T09:00:00"), duration: 120, seatsAvailable: 40, rating: 4.3, tags: ["economy"] },
+  { flightId: 112, airline: "SCAT", from: "Astana", to: "Shymkent", price: 32000, departure: new Date("2026-10-07T15:00:00"), duration: 140, seatsAvailable: 22, rating: 4.4, tags: ["economy"] },
+  { flightId: 113, airline: "Air Astana", from: "Almaty", to: "Frankfurt", price: 340000, departure: new Date("2026-10-11T01:00:00"), duration: 420, seatsAvailable: 6, rating: 4.9, tags: ["international", "business"] },
+  { flightId: 114, airline: "FlyArystan", from: "Astana", to: "Turkistan", price: 22000, departure: new Date("2026-10-05T11:00:00"), duration: 100, seatsAvailable: 55, rating: 4.1, tags: ["economy"] },
+  { flightId: 115, airline: "Qazaq Air", from: "Atyrau", to: "Almaty", price: 41000, departure: new Date("2026-10-08T07:30:00"), duration: 160, seatsAvailable: 28, rating: 4.5, tags: ["economy"] },
+  { flightId: 116, airline: "Air Astana", from: "Almaty", to: "Astana", price: 36500, departure: new Date("2026-10-05T20:00:00"), duration: 90, seatsAvailable: 50, rating: 4.6, tags: ["business", "direct"] },
+  { flightId: 117, airline: "SCAT", from: "Karaganda", to: "Almaty", price: 27000, departure: new Date("2026-10-09T13:00:00"), duration: 110, seatsAvailable: 32, rating: 4.2, tags: ["economy"] },
+  { flightId: 118, airline: "FlyArystan", from: "Almaty", to: "Aktau", price: 33000, departure: new Date("2026-10-10T06:00:00"), duration: 180, seatsAvailable: 45, rating: 4.0, tags: ["economy"] },
+  { flightId: 119, airline: "Air Astana", from: "Astana", to: "London", price: 385000, departure: new Date("2026-10-12T22:00:00"), duration: 480, seatsAvailable: 10, rating: 4.9, tags: ["international", "business"] },
+  { flightId: 120, airline: "Qazaq Air", from: "Pavlodar", to: "Astana", price: 24000, departure: new Date("2026-10-06T18:30:00"), duration: 105, seatsAvailable: 38, rating: 4.3, tags: ["economy"] },
+  { flightId: 121, airline: "SCAT", from: "Almaty", to: "Beijing", price: 260000, departure: new Date("2026-10-13T02:00:00"), duration: 340, seatsAvailable: 14, rating: 4.7, tags: ["international"] },
+  { flightId: 122, airline: "Air Astana", from: "Astana", to: "Almaty", price: 34000, departure: new Date("2026-10-05T06:30:00"), duration: 90, seatsAvailable: 40, rating: 4.5, tags: ["business"] },
+  { flightId: 123, airline: "FlyArystan", from: "Shymkent", to: "Astana", price: 29000, departure: new Date("2026-10-07T09:15:00"), duration: 125, seatsAvailable: 50, rating: 4.1, tags: ["economy"] },
+  { flightId: 124, airline: "Qazaq Air", from: "Kostanay", to: "Almaty", price: 31000, departure: new Date("2026-10-09T16:00:00"), duration: 145, seatsAvailable: 25, rating: 4.4, tags: ["economy"] },
+  { flightId: 125, airline: "Air Astana", from: "Almaty", to: "Seoul", price: 290000, departure: new Date("2026-10-14T05:00:00"), duration: 380, seatsAvailable: 9, rating: 4.8, tags: ["international"] },
+  { flightId: 126, airline: "SCAT", from: "Astana", to: "Aktobe", price: 35000, departure: new Date("2026-10-08T14:00:00"), duration: 135, seatsAvailable: 30, rating: 4.3, tags: ["economy"] },
+  { flightId: 127, airline: "Air Astana", from: "Atyrau", to: "Astana", price: 40000, departure: new Date("2026-10-10T19:00:00"), duration: 155, seatsAvailable: 22, rating: 4.6, tags: ["economy"] },
+  { flightId: 128, airline: "FlyArystan", from: "Almaty", to: "Taraz", price: 15000, departure: new Date("2026-10-05T12:00:00"), duration: 60, seatsAvailable: 65, rating: 3.9, tags: ["economy", "short"] },
+  { flightId: 129, airline: "Qazaq Air", from: "Astana", to: "Karaganda", price: 20000, departure: new Date("2026-10-06T15:30:00"), duration: 55, seatsAvailable: 42, rating: 4.2, tags: ["economy", "short"] },
+  { flightId: 130, airline: "Air Astana", from: "Almaty", to: "Bangkok", price: 320000, departure: new Date("2026-10-15T01:30:00"), duration: 460, seatsAvailable: 11, rating: 4.9, tags: ["international"] }
+]);
+
+db.passengers.insertMany([
+  { passengerId: 501, name: "Айдар Смагулов", email: "aidar@mail.kz", city: "Almaty", age: 32 },
+  { passengerId: 502, name: "Дана Сериккызы", email: "dana@mail.kz", city: "Astana", age: 27 },
+  { passengerId: 503, name: "Ерлан Ахметов", email: "erlan@mail.kz", city: "Shymkent", age: 41 },
+  { passengerId: 504, name: "Мадина Нурлан", email: "madina@mail.kz", city: "Almaty", age: 35 },
+  { passengerId: 505, name: "Ринат Шамиев", email: "rinat@mail.kz", city: "Aktobe", age: 29 }
+]);
+
+db.bookings.insertMany([
+  { bookingId: "B-001", flightId: 101, passengerId: 501, seats: 1, total: 35000, status: "confirmed", bookingDate: new Date("2026-09-28") },
+  { bookingId: "B-002", flightId: 103, passengerId: 501, seats: 2, total: 290000, status: "confirmed", bookingDate: new Date("2026-09-29") },
+  { bookingId: "B-003", flightId: 104, passengerId: 502, seats: 1, total: 19000, status: "pending", bookingDate: new Date("2026-09-30") },
+  { bookingId: "B-004", flightId: 107, passengerId: 503, seats: 1, total: 210000, status: "confirmed", bookingDate: new Date("2026-09-25") },
+  { bookingId: "B-005", flightId: 110, passengerId: 504, seats: 2, total: 390000, status: "confirmed", bookingDate: new Date("2026-09-26") },
+  { bookingId: "B-006", flightId: 113, passengerId: 504, seats: 1, total: 340000, status: "pending", bookingDate: new Date("2026-09-27") },
+  { bookingId: "B-007", flightId: 119, passengerId: 505, seats: 1, total: 385000, status: "confirmed", bookingDate: new Date("2026-09-30") },
+  { bookingId: "B-008", flightId: 101, passengerId: 502, seats: 3, total: 105000, status: "cancelled", bookingDate: new Date("2026-09-20") }
+]);
+
+print("Данные загружены: 30 + 5 + 8 = 43 документа");

@@ -1,0 +1,38 @@
+// Индексы и анализ планов выполнения
+
+use("airline_db");
+
+print("=== 1. explain ДО индекса (ожидается COLLSCAN) ===");
+printjson(db.flights.find({ from: "Almaty" }).explain("executionStats"));
+
+print("\n=== 2. Создаём простой индекс по from ===");
+db.flights.createIndex({ from: 1 });
+
+print("=== 3. explain ПОСЛЕ простого индекса (ожидается IXSCAN) ===");
+printjson(db.flights.find({ from: "Almaty" }).explain("executionStats"));
+
+print("\n=== 4. Создаём составной индекс {from, price} ===");
+db.flights.createIndex({ from: 1, price: 1 });
+
+print("=== 5. explain с составным индексом (без SORT) ===");
+printjson(db.flights.find({ from: "Almaty" }).sort({ price: 1 }).explain("executionStats"));
+
+print("\n=== 6. ESR-эксперимент: правильный порядок ===");
+db.flights.createIndex({ from: 1, price: 1, rating: 1 }, { name: "esr_correct" });
+printjson(
+  db.flights.find({ from: "Almaty", rating: { $gte: 4.5 } })
+            .sort({ price: 1 })
+            .explain("executionStats")
+);
+
+print("\n=== 7. ESR: неправильный порядок {from, rating, price} ===");
+db.flights.dropIndex("esr_correct");
+db.flights.createIndex({ from: 1, rating: 1, price: 1 }, { name: "esr_wrong" });
+printjson(
+  db.flights.find({ from: "Almaty", rating: { $gte: 4.5 } })
+            .sort({ price: 1 })
+            .explain("executionStats")
+);
+
+print("\n=== Список индексов коллекции flights ===");
+printjson(db.flights.getIndexes());

@@ -1,0 +1,10 @@
+// Лабораторная работа №4. Вариант 18. Авиабилеты.
+// Создание базы данных и трёх коллекций
+
+use("airline_db");
+
+db.createCollection("flights");
+db.createCollection("passengers");
+db.createCollection("bookings");
+
+print("Коллекции созданы: flights, passengers, bookings");
