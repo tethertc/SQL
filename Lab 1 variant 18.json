@@ -1,0 +1,2311 @@
+
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.drop()\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.createCollection(\\\"flights\\\")\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.insertMany([\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1001,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"Air Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"08:30\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 25000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 45,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\", \\\"Meal\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A320\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 180\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1002,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"FlyArystan\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Shymkent\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"10:15\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 12000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 30,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Meal\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A320\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 180\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1003,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"SCAT\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Aktau\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"12:40\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 32000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 12,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Boarding\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Boeing 737\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 149\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1004,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"Air Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Dubai\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"14:20\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 95000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 20,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\", \\\"Meal\\\", \\\"Baggage\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A321\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 220\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1005,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"SCAT\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Shymkent\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"16:00\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 28000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 8,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Delayed\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Meal\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Boeing 737\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 149\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1006,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"FlyArystan\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"17:30\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 15000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 60,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Baggage\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A320\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 180\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1007,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"Air Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Istanbul\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"19:10\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 110000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 15,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Boarding\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\", \\\"Meal\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A321\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 220\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1008,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"SCAT\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Aktobe\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"20:25\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 22000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 25,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Boeing 737\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 149\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1009,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"FlyArystan\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"Turkistan\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"21:15\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 10000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 5,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Meal\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Airbus A320\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 180\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1010,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: \\\"Air Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: \\\"London\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    departureTime: \\\"23:00\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 180000,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    seatsAvailable: 18,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    amenities: [\\\"Wi-Fi\\\", \\\"Meal\\\", \\\"Baggage\\\"],\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    aircraft: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      model: \\\"Boeing 767\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      capacity: 250\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"])\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find()\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  flightId: 1001\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  airline: \\\"Air Astana\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  price: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $gt: 30000\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  price: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $lt: 20000\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  from: \\\"Almaty\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  price: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $gte: 20000\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  $or: [\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      from: \\\"Almaty\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      to: \\\"Dubai\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  ]\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  airline: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $in: [\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      \\\"Air Astana\\\",\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      \\\"SCAT\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    ]\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  amenities: \\\"Wi-Fi\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  \\\"aircraft.model\\\": \\\"Boeing 737\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find(\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {},\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    airline: 1,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    from: 1,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    to: 1,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    price: 1,\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    _id: 0\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \")\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find().sort({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  price: 1\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find().limit(3)\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.updateOne(\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1001\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $set: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      status: \\\"Boarding\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \")\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.updateOne(\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    flightId: 1001\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $push: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      amenities: \\\"Priority Boarding\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \")\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.updateMany(\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    status: \\\"Scheduled\\\"\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  },\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    $set: {\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"      updatedForLab: true\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"    }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  }\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \")\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.deleteOne({\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"  flightId: 1009\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"})\""
+ },
+ {
+  " null,": " },"
+ },
+ {
+  " null,": " null,"
+ },
+ {
+  " null,": " {"
+ },
+ {
+  " null,": "  \"use flights_db\": \"db.flights.find()\""
+ },
+ {
+  " null,": " }"
+ }
