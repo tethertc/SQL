@@ -1,0 +1,55 @@
+
+db.articles.find({ author_ids: 1 }, { title: 1, _id: 0 })
+
+db.articles.aggregate([
+  { $match: { _id: 101 } },
+  { $unwind: "$author_ids" },
+  { $lookup: { from: "authors", localField: "author_ids", foreignField: "_id", as: "author" } },
+  { $unwind: "$author" },
+  { $project: { _id: 0, "author.name": 1 } }
+])
+
+db.articles.find({ tags: "Databases" }, { title: 1, _id: 0 })
+
+db.articles.aggregate([
+  { $match: { author_ids: 1 } },
+  { $unwind: "$author_ids" },
+  { $match: { author_ids: { $ne: 1 } } },
+  { $group: { _id: "$author_ids" } },
+  { $lookup: { from: "authors", localField: "_id", foreignField: "_id", as: "coauthor" } },
+  { $unwind: "$coauthor" },
+  { $project: { _id: 0, name: "$coauthor.name" } }
+])
+
+db.articles.aggregate([
+  { $match: { author_ids: { $all: [1, 2] } } },
+  { $unwind: "$tags" },
+  { $group: { _id: "$tags" } }
+])
+
+db.articles.aggregate([
+  { $match: { tags: "Machine Learning" } },
+  { $unwind: "$author_ids" },
+  { $group: { _id: "$author_ids" } },
+  { $lookup: { from: "authors", localField: "_id", foreignField: "_id", as: "author" } },
+  { $unwind: "$author" },
+  { $project: { _id: 0, name: "$author.name" } }
+])
+
+db.articles.find({ year: 2024 }, { title: 1, _id: 0 })
+
+db.articles.aggregate([
+  { $match: { author_ids: 1 } },
+  { $unwind: "$tags" },
+  { $group: { _id: null, tags: { $addToSet: "$tags" } } },
+  { $lookup: { from: "articles", let: { ivanTags: "$tags" }, pipeline: [
+      { $match: { $expr: { $in: ["$tags", "$$ivanTags"] } } },
+      { $match: { author_ids: { $nin: [1] } } },
+      { $unwind: "$author_ids" },
+      { $group: { _id: "$author_ids" } }
+    ], as: "recommended" } },
+  { $unwind: "$recommended" },
+  { $lookup: { from: "authors", localField: "recommended._id", foreignField: "_id", as: "author" } },
+  { $unwind: "$author" },
+  { $project: { _id: 0, name: "$author.name" } }
+])
